@@ -4,10 +4,10 @@ import './Title.css';
 
 const Title = () => {
   return (
-    <body>
+    <section className="title">
       <audio src={Power} autoPlay loop />
 
-    </body>
+    </section>
   )
 }
 
