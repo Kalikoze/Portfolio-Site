@@ -15,8 +15,9 @@ video {
 }
 
 .overlay {
+  animation: flicker 5s;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -26,10 +27,46 @@ video {
 }
 
 h1 {
+  animation: fadeIn 5s;
   color: #FFF;
   font-size: 5vw;
 }
 
-@@keyframes identifier {
+@keyframes flicker {
+  0% {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  10%: {
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+  12% {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  14% {
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+  16% {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  18% {
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0)
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+}
 
+@keyframes fadeIn {
+  0% {
+    color: rgba(255, 255, 255, 0)
+  }
+  40% {
+    color: rgba(255, 255, 255, 0)
+  }
+  100% {
+    color: rgba(255, 255, 255, 1)
+  }
 }
