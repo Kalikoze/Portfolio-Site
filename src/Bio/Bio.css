@@ -50,9 +50,10 @@
 }
 
 .bio-text {
+  color: #FFF;
   flex-wrap: wrap;
   font-size: 2vw;
-  color: #FFF;
+  overflow-y: scroll;
 }
 
 .bio-text p {
