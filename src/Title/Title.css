@@ -17,7 +17,7 @@ video {
 .overlay {
   animation: flicker 5s;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -36,26 +36,26 @@ h1 {
   0% {
     background-color: rgba(0, 0, 0, 0)
   }
-  10%: {
-    background-color: rgba(0, 0, 0, 0.8)
+  8%: {
+    background-color: rgba(255, 255, 255, 1)
   }
   12% {
     background-color: rgba(0, 0, 0, 0)
   }
   14% {
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(255, 255, 255, 1)
   }
   16% {
     background-color: rgba(0, 0, 0, 0)
   }
   18% {
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(255, 255, 255, 1)
   }
   20% {
     background-color: rgba(0, 0, 0, 0)
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.8)
+    background-color: rgba(0, 0, 0, 0.7)
   }
 }
 
