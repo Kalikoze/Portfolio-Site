@@ -1,0 +1,8 @@
+.l-tech {
+  position: relative;
+  top: 190vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
