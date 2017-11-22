@@ -23,10 +23,10 @@ li {
 }
 
 li:hover {
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #000;
 }
 
 li:hover .nav-text {
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
