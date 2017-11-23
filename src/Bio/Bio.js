@@ -20,7 +20,7 @@ const Bio = () => {
             After recently finishing the Front-End program at the Turing School of Software & Design, he has learned the importance of UI/UX experience, testing on multiple levels, and the power of diversity.  His strengths lie in creating simple and clean interfaces, bringing in various types of data, developing accounts with authorization, and pushing unique experiences.   With one ear to the sound of a new drum, and the other to the wisdom of other developers willing to impart their advice, Travis continues towards a new, fulfilling, and successful career.
           </p>
         </article>
-          <img src={profilePhoto} />
+          <img src={profilePhoto} alt="Travis Rollins screenshot from a few years ago."/>
       </section>
     </section>
   );

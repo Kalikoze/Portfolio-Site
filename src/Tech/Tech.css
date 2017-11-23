@@ -13,14 +13,16 @@
 }
 
 .l-tech-skills {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   height: 80%;
+  justify-content: center;
   position: relative;
   top: 20vh;
   width: 100%;
 }
 
 .slideshow {
-  height: 200px;
+  height: 100px;
 }
