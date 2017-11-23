@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fire from './assets/fire.mp4';
 import react from './assets/react-logo.png';
 import redux from './assets/redux-logo.png';
 import reactRouter from './assets/react-router-logo.png';
@@ -44,28 +45,32 @@ export default class Tech extends Component {
   }
 
   componentDidMount() {
-    this.carousel(0 , 5);
+    this.carousel([0 , 1, 2, 3, 4]);
   }
 
-  carousel(start, end) {
+  carousel(arr) {
     const { imgArr } = this.state;
-    if (start === 16) {
-      start = 0
-    }
+    const images = [];
 
-    if (end === 16) {
-      end = 0
-    }
+    const newArr = arr.map(num => {
+      if (num === 15) {
+        num = 0
+      }
+      return num += 1
+    })
 
-    setTimeout(() => this.carousel(start++, end++), 500);
-    this.setState({displayedImgs: imgArr.slice(start++, end++)})
+    newArr.forEach(num => images.push(imgArr[num]))
+
+    setTimeout(() => this.carousel(newArr), 500);
+    this.setState({displayedImgs: images})
   }
 
   render() {
     const { displayedImgs } = this.state;
-    // this.carousel()
+
     return (
       <section className='l-tech'>
+        <video src={fire} autoPlay loop />
         <article className="l-section-title">
           <h2>Technical Experience</h2>
         </article>
