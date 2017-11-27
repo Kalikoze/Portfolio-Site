@@ -5,11 +5,12 @@ nav, ul {
   height: 10vh;
   margin: 0;
   padding: 0;
+  position: fixed;
   width: 100%;
   z-index: 100;
 }
 
-li {
+a {
   align-items: center;
   border: 3px solid #FFF;
   color: #FFF;
@@ -22,11 +23,11 @@ li {
   width: 25%;
 }
 
-li:hover {
+a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
 }
 
-li:hover .nav-text {
+a:hover .nav-text {
   transform: scale(1.4);
 }
