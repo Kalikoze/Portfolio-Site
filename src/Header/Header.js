@@ -5,18 +5,21 @@ const Header = () => {
   return (
     <nav>
       <ul>
-        <li>
+        <a href='#home'>
+          <p className="nav-text">Home</p>
+        </a>
+        <a href='#bio'>
           <p className="nav-text">Bio</p>
-        </li>
-        <li>
+        </a>
+        <a href='#tech'>
           <p className="nav-text">Tech</p>
-        </li>
-        <li>
+        </a>
+        <a href='#projects'>
           <p className="nav-text">Projects</p>
-        </li>
-        <li>
+        </a>
+        <a href='#contact'>
           <p className="nav-text">Contact</p>
-        </li>
+        </a>
       </ul>
     </nav>
   )
