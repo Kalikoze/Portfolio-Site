@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import Title from '../Title/Title';
 import Header from '../Header/Header';
 import Bio from '../Bio/Bio';
 import Tech from '../Tech/Tech';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import Projects from '../Projects/Projects';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,9 @@ class App extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id="tech">
           <Tech />
+        </ScrollableAnchor>
+        <ScrollableAnchor id="projects">
+          <Projects />
         </ScrollableAnchor>
       </div>
     );
