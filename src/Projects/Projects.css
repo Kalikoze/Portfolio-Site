@@ -1,23 +1,22 @@
 .l-projects {
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
-  position: absolute;
-  top: 300vh;
   width: 100%;
 }
 
-.l-section-title {
+.l-projects .l-section-title, .l-project-imgs {
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  height: 20%;
+  position: relative;
+  top: -100vh;
   width: 100%;
+}
+
+.l-projects .l-section-title {
+  height: 20%;
 }
 
 .l-project-imgs {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
   height: 80%;
-  position: absolute;
-  top: 20vh;
-  width: 100%;
 }
