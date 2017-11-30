@@ -18,5 +18,22 @@
 }
 
 .l-project-imgs {
+  align-items: center;
+  justify-content: center;
   height: 80%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  grid-template-rows: 50% 50%;
+  height: 100%;
+  margin: 10px;
+  width: 100%;
+}
+
+.l-project-imgs img {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
 }
