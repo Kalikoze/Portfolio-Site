@@ -1,0 +1,40 @@
+.project-container img {
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+}
+
+.project-description {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  display: none;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  width: 100%;
+}
+
+.project-container:hover .project-description {
+  display: flex;
+}
+
+.project-description p {
+  height: 80%;
+  width: 100%;
+}
+
+.project-description button {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-size: 24px;
+  height: 20%;
+  width: 100%;
+}
+
+.project-description button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #000;
+  color: #000;
+}
