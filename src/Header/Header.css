@@ -19,6 +19,7 @@ a {
   height: 100%;
   justify-content: center;
   list-style: none;
+  text-decoration: none;
   transition: ease 1s;
   width: 25%;
 }
@@ -29,5 +30,6 @@ a:hover {
 }
 
 a:hover .nav-text {
+  text-decoration: underline;
   transform: scale(1.4);
 }
