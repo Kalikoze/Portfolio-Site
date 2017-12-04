@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import waves from './assets/waves.mp4';
+import rain from './assets/rain.mp4';
 import './Contact.css'
 
 export default class Contact extends Component {
   render() {
     return (
       <section className="l-contact">
-        <video src={waves} autoPlay loop muted />
+        <video src={rain} autoPlay loop muted />
         <article className="l-section-title">
           <h2>Contact Information</h2>
         </article>
@@ -17,6 +17,8 @@ export default class Contact extends Component {
             <input id="name" type="text" name="name" />
             <label for="email">Email: </label>
             <input id="email" type="email" name="_replyto" />
+            <label for="message"> Message: </label>
+            <textarea id="message" name="message"></textarea>
             <input type="submit" value="Send" />
         </form>
         </section>
