@@ -28,6 +28,6 @@
   grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
   grid-template-rows: 50% 50%;
   height: 100%;
-  margin: 10px;
+  margin: 20px;
   width: 100%;
 }
