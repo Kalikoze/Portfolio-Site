@@ -18,11 +18,49 @@
 }
 
 .l-tech-skills {
-  align-items: center;
+  justify-content: center;
   height: 80%;
 }
 
-.slideshow {
-  margin: 0 50px;
-  height: 250px;
+.carousel-container {
+  margin-top: -20%;
+  height: 550px;
+  width: 900px;
+  perspective: 1000px;
+
 }
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#carousel img {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 39%;
+  top: 80%;
+  border: 2px solid black;
+}
+
+#carousel img:nth-child(1) { transform: rotateY( 0deg ) translateZ(550px)}
+#carousel img:nth-child(2) { transform: rotateY( 22.5deg ) translateZ(550px) }
+#carousel img:nth-child(3) { transform: rotateY( 45deg ) translateZ(550px) }
+#carousel img:nth-child(4) { transform: rotateY( 67.5deg ) translateZ(550px) }
+#carousel img:nth-child(5) { transform: rotateY( 90deg ) translateZ(550px) }
+#carousel img:nth-child(6) { transform: rotateY( 112.5deg ) translateZ(550px) }
+#carousel img:nth-child(7) { transform: rotateY( 135deg ) translateZ(550px) }
+#carousel img:nth-child(8) { transform: rotateY( 157.5deg ) translateZ(550px) }
+#carousel img:nth-child(9) { transform: rotateY( 180deg ) translateZ(550px) }
+#carousel img:nth-child(10) { transform: rotateY( 202.5deg ) translateZ(550px) }
+#carousel img:nth-child(11) { transform: rotateY( 225deg ) translateZ(550px) }
+#carousel img:nth-child(12) { transform: rotateY( 247.5deg ) translateZ(550px) }
+#carousel img:nth-child(13) { transform: rotateY( 270deg ) translateZ(550px) }
+#carousel img:nth-child(14) { transform: rotateY( 292.5deg ) translateZ(550px) }
+#carousel img:nth-child(15) { transform: rotateY( 315deg ) translateZ(550px) }
+#carousel img:nth-child(16) { transform: rotateY( 337.5deg ) translateZ(550px) }

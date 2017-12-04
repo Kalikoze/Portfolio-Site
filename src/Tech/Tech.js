@@ -22,7 +22,7 @@ export default class Tech extends Component {
   constructor() {
     super();
     this.state = {
-      imgArr: [
+      displayedImgs: [
         <img className="slideshow" src={react} alt="React Logo" key="React" />,
         <img className="slideshow" src={redux} alt="Redux Logo" key="Redux" />,
         <img className="slideshow" src={reactRouter} alt="React Router Logo" key="React Router" />,
@@ -39,30 +39,21 @@ export default class Tech extends Component {
         <img className="slideshow" src={git} alt="Git Logo" key="Git" />,
         <img className="slideshow" src={github} alt="GitHub Logo" key='GitHub' />,
         <img className="slideshow" src={circleci} alt="CircleCI Logo" key="CircleCI" />,
-      ],
-      displayedImgs: []
+      ]
     }
   }
 
   componentDidMount() {
-    this.carousel([0 , 1, 2, 3, 4]);
+    this.carousel();
   }
 
-  carousel(arr) {
-    const { imgArr } = this.state;
-    const images = [];
+  carousel() {
+    const { displayedImgs } = this.state;
+    const lastImg = displayedImgs.pop();
+    displayedImgs.unshift(lastImg)
 
-    const newArr = arr.map(num => {
-      if (num === 15) {
-        num = 0
-      }
-      return num += 1
-    })
-
-    newArr.forEach(num => images.push(imgArr[num]))
-
-    setTimeout(() => this.carousel(newArr), 500);
-    this.setState({displayedImgs: images})
+    setTimeout(() => this.carousel(), 500);
+    this.setState({displayedImgs: displayedImgs})
   }
 
   render() {
@@ -75,7 +66,11 @@ export default class Tech extends Component {
           <h2>Technical Experience</h2>
         </article>
         <section className='l-tech-skills'>
-          {displayedImgs}
+          <section className="carousel-container">
+            <div id="carousel">
+              {displayedImgs}
+            </div>
+          </section>
         </section>
       </section>
     )
