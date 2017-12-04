@@ -5,13 +5,14 @@ import Header from '../Header/Header';
 import Bio from '../Bio/Bio';
 import Tech from '../Tech/Tech';
 import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 import './App.css';
 
 class App extends Component {
   render() {
     configureAnchors({offset: -80, scrollDuration: 600})
     return (
-      <div className="App">
+      <section className="app">
         <Header />
         <ScrollableAnchor id="home">
           <Title />
@@ -25,7 +26,10 @@ class App extends Component {
         <ScrollableAnchor id="projects">
           <Projects />
         </ScrollableAnchor>
-      </div>
+        <ScrollableAnchor id="contact">
+          <Contact />
+        </ScrollableAnchor>
+      </section>
     );
   }
 }

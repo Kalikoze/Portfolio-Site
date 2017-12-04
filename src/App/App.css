@@ -3,3 +3,7 @@
 *:before {
   box-sizing: border-box;
 }
+
+.app {
+  height: 0;
+}
