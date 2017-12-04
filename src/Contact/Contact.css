@@ -5,11 +5,11 @@
   width: 100%;
 }
 
-.l-contact, .l-section-title, .l-contact-form {
+.l-contact .l-section-title, .l-contact .l-contact-form {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   position: relative;
-  top: -100vh;
+  top: -100%;
   width: 100%;
 }
 
