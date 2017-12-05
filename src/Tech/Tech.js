@@ -52,7 +52,7 @@ export default class Tech extends Component {
     const lastImg = displayedImgs.pop();
     displayedImgs.unshift(lastImg)
 
-    setTimeout(() => this.carousel(), 500);
+    setTimeout(() => this.carousel(), 1000);
     this.setState({displayedImgs: displayedImgs})
   }
 
@@ -71,6 +71,9 @@ export default class Tech extends Component {
               {displayedImgs}
             </div>
           </section>
+          <article className="tech-name">
+            {displayedImgs.slice(0)[0].key}
+          </article>
         </section>
       </section>
     )
