@@ -36,6 +36,8 @@
 .project-description h3 {
   align-items: center;
   display: flex;
+  font-family: 'Vollkorn SC', sans-serif;
+
   height: 15%;
   justify-content: center;
   margin: 0 auto;
@@ -47,6 +49,7 @@
 }
 
 .project-description p {
+  font-family: 'Vollkorn', sans-serif;
   font-size: 1vw;
   height: 60%;
   margin: 0;

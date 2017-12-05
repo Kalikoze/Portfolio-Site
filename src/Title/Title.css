@@ -25,6 +25,7 @@ video {
 }
 
 h1 {
+  font-family: 'Abril Fatface', sans-serif;
   animation: fadeIn 5s;
   color: #FFF;
   font-size: 5vw;

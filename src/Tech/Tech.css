@@ -69,6 +69,7 @@
 .tech-name {
   align-items: flex-end;
   color: #FFF;
+  font-family: 'Vollkorn SC', sans-serif;
   display: flex;
   font-size: 4vw;
   justify-content: center;

@@ -19,6 +19,7 @@
 .l-section-title {
   align-items: center;
   color: #FFF;
+  font-family: 'Abril Fatface', sans-serif;
   font-size: 4vw;
   justify-content: center;
   height: 20%;
@@ -30,6 +31,7 @@
 
 .bio-text, .l-bio-info img {
   display: flex;
+  font-family: 'Vollkorn SC', sans-serif;=
   height: 100%;
   padding: 50px;
   width: 50%;
