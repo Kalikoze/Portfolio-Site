@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import rain from './assets/rain.mp4';
 import './Contact.css'
 
 export default class Contact extends Component {
   render() {
+    setDefaultProps({ percent: 20 });
     return (
       <section className="l-contact">
         <video src={rain} autoPlay loop muted />
+        <OnVisible>
         <article className="l-section-title">
           <h2>Contact Information</h2>
         </article>
@@ -22,6 +25,7 @@ export default class Contact extends Component {
             <input type="submit" value="Send" />
         </form>
         </section>
+      </OnVisible>
       </section>
     )
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import fire from './assets/fire.mp4';
 import react from './assets/react-logo.png';
 import redux from './assets/redux-logo.png';
@@ -58,23 +59,26 @@ export default class Tech extends Component {
 
   render() {
     const { displayedImgs } = this.state;
+    setDefaultProps({ percent: 20 });
 
     return (
       <section className='l-tech'>
         <video src={fire} autoPlay loop />
-        <article className="l-section-title">
-          <h2>Technical Experience</h2>
-        </article>
-        <section className='l-tech-skills'>
-          <section className="carousel-container">
-            <div id="carousel">
-              {displayedImgs}
-            </div>
-          </section>
-          <article className="tech-name">
-            {displayedImgs.slice(0)[0].key}
+        <OnVisible>
+          <article className="l-section-title">
+            <h2>Technical Experience</h2>
           </article>
-        </section>
+          <section className='l-tech-skills'>
+            <section className="carousel-container">
+              <div id="carousel">
+                {displayedImgs}
+              </div>
+            </section>
+            <article className="tech-name">
+              {displayedImgs.slice(0)[0].key}
+            </article>
+          </section>
+      </OnVisible>
       </section>
     )
   }

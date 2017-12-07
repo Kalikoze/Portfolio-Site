@@ -17,9 +17,9 @@ class App extends Component {
         <ScrollableAnchor id="home">
           <Title />
         </ScrollableAnchor>
-        <ScrollableAnchor id="bio">
-          <Bio />
-        </ScrollableAnchor>
+          <ScrollableAnchor id="bio">
+            <Bio />
+          </ScrollableAnchor>
         <ScrollableAnchor id="tech">
           <Tech />
         </ScrollableAnchor>

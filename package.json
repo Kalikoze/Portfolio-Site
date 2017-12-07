@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-on-visible": "^1.4.0",
     "react-scripts": "1.0.17",
     "react-scrollable-anchor": "^0.5.0",
     "webfontloader": "^1.6.28"

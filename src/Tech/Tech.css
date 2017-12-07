@@ -8,8 +8,7 @@
 .l-tech .l-section-title, .l-tech-skills {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  position: relative;
-  top: -100vh;
+  position: absolute;
   width: 100%;
 }
 
@@ -21,6 +20,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 80%;
+  top: 20%;
 }
 
 .carousel-container {

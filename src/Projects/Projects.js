@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import ProjectImg from '../ProjectImg/ProjectImg';
 import tunnel from './assets/tunnel.mp4'
 import './Projects.css';
 
 export default class Projects extends Component {
   render() {
+    setDefaultProps({ percent: 20 });
     return (
       <section className='l-projects'>
         <video src={tunnel} autoPlay loop />
+        <OnVisible>
         <article className="l-section-title">
           <h2>Previous Applications</h2>
         </article>
@@ -57,6 +60,7 @@ export default class Projects extends Component {
             />
           </section>
         </section>
+      </OnVisible>
       </section>
     );
   };

@@ -8,8 +8,7 @@
 .l-contact .l-section-title, .l-contact .l-contact-form {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  position: relative;
-  top: -100%;
+  position: absolute;
   width: 100%;
 }
 
@@ -19,6 +18,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 80%;
+  top: 20%;
 }
 
 .email-phone {
