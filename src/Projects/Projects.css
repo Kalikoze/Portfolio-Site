@@ -8,8 +8,7 @@
 .l-projects .l-section-title, .l-project-imgs {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  position: relative;
-  top: -100vh;
+  position: absolute;
   width: 100%;
 }
 
@@ -21,6 +20,7 @@
   align-items: center;
   justify-content: center;
   height: 80%;
+  top: 20%;
 }
 
 .project-grid {
