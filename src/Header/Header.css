@@ -10,6 +10,10 @@ nav, ul {
   z-index: 100;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 a {
   align-items: center;
   border: 3px solid #FFF;
@@ -34,4 +38,25 @@ a:hover {
 a:hover .nav-text {
   text-decoration: underline;
   transform: scale(1.4);
+}
+
+/* Media Queries */
+
+@media (max-width: 650px) {
+  ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    align-items: center;
+    background-image: url('./assets/menu.svg');
+    background-repeat: no-repeat;
+    background-position: 2% center;
+    background-size: 50px;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 100%;
+  }
 }

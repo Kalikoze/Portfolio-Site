@@ -1,9 +1,14 @@
 import React from 'react';
+import menu from './assets/menu.svg';
 import './Header.css';
 
 const Header = () => {
   return (
     <nav>
+      <section className="mobile-menu">
+        {/* <img src={menu} alt="Menu icon" /> */}
+        <h2 className="menu-text">Menu</h2>
+      </section>
       <ul>
         <a href='#home'>
           <p className="nav-text">Home</p>
