@@ -49,14 +49,36 @@ a:hover .nav-text {
 
   .mobile-menu {
     align-items: center;
-    background-image: url('./assets/menu.svg');
+    background-image: url('./assets/white-menu.svg');
     background-repeat: no-repeat;
     background-position: 2% center;
     background-size: 50px;
+    cursor: pointer;
     display: flex;
+    font-family: 'Vollkorn SC', sans-serif;
     height: 100%;
     justify-content: flex-end;
     padding-right: 20px;
+    width: 100%;
+  }
+
+  nav:hover .mobile-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('./assets/black-menu.svg');
+    color: #000;
+  }
+
+  .drop-down {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    height: auto;
+  }
+
+  .drop-link {
+    display: flex;
+    height: 100px;
     width: 100%;
   }
 }
