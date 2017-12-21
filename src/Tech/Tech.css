@@ -44,7 +44,7 @@
   display: block;
   height: 125px;
   position: absolute;
-  top: 80%;
+  top: 75%;
   width: 175px;
 }
 
@@ -75,4 +75,89 @@
   width: 100%;
   height: 500px;
   padding-bottom: 100px;
+}
+
+
+@media (max-width: 1150px) {
+  #carousel img:nth-child(1) { transform: rotateY( 0deg ) translateZ(350px)}
+  #carousel img:nth-child(2) { transform: rotateY( 22.5deg ) translateZ(350px) }
+  #carousel img:nth-child(3) { transform: rotateY( 45deg ) translateZ(350px) }
+  #carousel img:nth-child(4) { transform: rotateY( 67.5deg ) translateZ(350px) }
+  #carousel img:nth-child(5) { transform: rotateY( 90deg ) translateZ(350px) }
+  #carousel img:nth-child(6) { transform: rotateY( 112.5deg ) translateZ(350px) }
+  #carousel img:nth-child(7) { transform: rotateY( 135deg ) translateZ(350px) }
+  #carousel img:nth-child(8) { transform: rotateY( 157.5deg ) translateZ(350px) }
+  #carousel img:nth-child(9) { transform: rotateY( 180deg ) translateZ(350px) }
+  #carousel img:nth-child(10) { transform: rotateY( 202.5deg ) translateZ(350px) }
+  #carousel img:nth-child(11) { transform: rotateY( 225deg ) translateZ(350px) }
+  #carousel img:nth-child(12) { transform: rotateY( 247.5deg ) translateZ(350px) }
+  #carousel img:nth-child(13) { transform: rotateY( 270deg ) translateZ(350px) }
+  #carousel img:nth-child(14) { transform: rotateY( 292.5deg ) translateZ(350px) }
+  #carousel img:nth-child(15) { transform: rotateY( 315deg ) translateZ(350px) }
+  #carousel img:nth-child(16) { transform: rotateY( 337.5deg ) translateZ(350px) }
+
+  #carousel img {
+    height: 75px;
+    width: 125px;
+  }
+
+  .tech-name {
+    padding-bottom: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  #carousel img:nth-child(1) { transform: rotateY( 0deg ) translateZ(300px)}
+  #carousel img:nth-child(2) { transform: rotateY( 22.5deg ) translateZ(300px) }
+  #carousel img:nth-child(3) { transform: rotateY( 45deg ) translateZ(300px) }
+  #carousel img:nth-child(4) { transform: rotateY( 67.5deg ) translateZ(300px) }
+  #carousel img:nth-child(5) { transform: rotateY( 90deg ) translateZ(300px) }
+  #carousel img:nth-child(6) { transform: rotateY( 112.5deg ) translateZ(300px) }
+  #carousel img:nth-child(7) { transform: rotateY( 135deg ) translateZ(300px) }
+  #carousel img:nth-child(8) { transform: rotateY( 157.5deg ) translateZ(300px) }
+  #carousel img:nth-child(9) { transform: rotateY( 180deg ) translateZ(300px) }
+  #carousel img:nth-child(10) { transform: rotateY( 202.5deg ) translateZ(300px) }
+  #carousel img:nth-child(11) { transform: rotateY( 225deg ) translateZ(300px) }
+  #carousel img:nth-child(12) { transform: rotateY( 247.5deg ) translateZ(300px) }
+  #carousel img:nth-child(13) { transform: rotateY( 270deg ) translateZ(300px) }
+  #carousel img:nth-child(14) { transform: rotateY( 292.5deg ) translateZ(300px) }
+  #carousel img:nth-child(15) { transform: rotateY( 315deg ) translateZ(300px) }
+  #carousel img:nth-child(16) { transform: rotateY( 337.5deg ) translateZ(300px) }
+
+  #carousel img {
+    height: 50px;
+    width: 100px;
+  }
+
+  .tech-name {
+    padding-bottom: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  #carousel img:nth-child(1) { transform: rotateY( 0deg ) translateZ(175px)}
+  #carousel img:nth-child(2) { transform: rotateY( 22.5deg ) translateZ(175px) }
+  #carousel img:nth-child(3) { transform: rotateY( 45deg ) translateZ(175px) }
+  #carousel img:nth-child(4) { transform: rotateY( 67.5deg ) translateZ(175px) }
+  #carousel img:nth-child(5) { transform: rotateY( 90deg ) translateZ(175px) }
+  #carousel img:nth-child(6) { transform: rotateY( 112.5deg ) translateZ(175px) }
+  #carousel img:nth-child(7) { transform: rotateY( 135deg ) translateZ(175px) }
+  #carousel img:nth-child(8) { transform: rotateY( 157.5deg ) translateZ(175px) }
+  #carousel img:nth-child(9) { transform: rotateY( 180deg ) translateZ(175px) }
+  #carousel img:nth-child(10) { transform: rotateY( 202.5deg ) translateZ(175px) }
+  #carousel img:nth-child(11) { transform: rotateY( 225deg ) translateZ(175px) }
+  #carousel img:nth-child(12) { transform: rotateY( 247.5deg ) translateZ(175px) }
+  #carousel img:nth-child(13) { transform: rotateY( 270deg ) translateZ(175px) }
+  #carousel img:nth-child(14) { transform: rotateY( 292.5deg ) translateZ(175px) }
+  #carousel img:nth-child(15) { transform: rotateY( 315deg ) translateZ(175px) }
+  #carousel img:nth-child(16) { transform: rotateY( 337.5deg ) translateZ(175px) }
+
+  #carousel img {
+    height: 75px;
+    width: 50px;
+  }
+
+  .tech-name {
+    padding-bottom: 500px;
+  }
 }
